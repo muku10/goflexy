@@ -605,9 +605,34 @@
           <div class="hero-overlay"></div>
         </div>
       </div>
+      
 <style>
        
-        
+       /* Add this CSS in the existing <style> tag or create a new one */
+.footer {
+    overflow: hidden; /* Prevent content from scrolling outside */
+}
+
+.ticket-flex-main {
+    overflow: hidden; /* Contain the scrolling within the element */
+    position: relative;
+}
+
+.ticket-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    animation: tickerScroll 20s linear infinite;
+}
+
+@keyframes tickerScroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+} 
         /* Header */
         header {
             background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%);
@@ -1115,7 +1140,7 @@
     </section>
 
     <!-- Application Process -->
-    <section class="application-process">
+    <!-- <section class="application-process">
         <div class="container">
             <div class="section-title">
                 <h2>Our Recruitment Process</h2>
@@ -1123,28 +1148,28 @@
             </div>
             
             <div class="process-grid">
-                <!-- Step 1 -->
+                
                 <div class="process-step">
                     <div class="step-number">1</div>
                     <h4>Application</h4>
                     <p>Submit your CV and cover letter through our platform</p>
                 </div>
                 
-                <!-- Step 2 -->
+                
                 <div class="process-step">
                     <div class="step-number">2</div>
                     <h4>Phone Interview</h4>
                     <p>30-minute discussion with our HR manager</p>
                 </div>
                 
-                <!-- Step 3 -->
+               
                 <div class="process-step">
                     <div class="step-number">3</div>
                     <h4>In-person Interview</h4>
                     <p>Meet with your future manager and team members</p>
                 </div>
                 
-                <!-- Step 4 -->
+                
                 <div class="process-step">
                     <div class="step-number">4</div>
                     <h4>Onboarding</h4>
@@ -1152,7 +1177,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Spontaneous Application -->
     <!-- <section class="spontaneous-application">
@@ -1187,7 +1212,7 @@
         });
     </script> -->
 
-      <section data-w-id="8bb0cce7-240a-7d4b-2ba3-8c2111a276ee" class="footer">
+      <section data-w-id="8bb0cce7-240a-7d4b-2ba3-8c2111a276ee" class="footer" style="z-index: -1;">
         <div
           data-w-id="8bb0cce7-240a-7d4b-2ba3-8c2111a276ef"
           class="category-ticket relative"
